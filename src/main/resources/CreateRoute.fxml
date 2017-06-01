@@ -35,7 +35,7 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Route" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Route" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <font>
                   <Font size="18.0" />
                </font>
@@ -81,6 +81,19 @@
                   </Text>
                   <TextField fx:id="searchField" HBox.hgrow="ALWAYS" />
                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton fx:id="toUni" mnemonicParsing="false" prefHeight="18.0" prefWidth="166.0" selected="true" text="To Uni">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Direction" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="fromUni" mnemonicParsing="false" text="From Uni" toggleGroup="$Direction" />
+               </children>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
             </HBox>
          </children>
          <columnConstraints>

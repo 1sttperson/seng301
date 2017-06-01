@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.fxml.FXML;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -31,6 +32,9 @@ public class CreateRouteController extends Controller{
     @FXML private TableColumn<StopPoint, String> stopPointStreet;
     @FXML private TableColumn<StopPoint, String> stopPointSuburb;
 
+    @FXML private RadioButton toUni;
+    @FXML private RadioButton fromUni;
+
     private List<StopPoint> stopPointList;
     private List<StopPoint> routeList;
 
@@ -38,7 +42,7 @@ public class CreateRouteController extends Controller{
     @Override
     public void setup(ScreenController screenController){
         this.screenController = screenController;
-        this.dataStore = dataStore;
+        this.dataStore = DataStore.getInstance();
 
         stopPointList = FXCollections.observableArrayList(dataStore.getStopPoints());
 
@@ -100,6 +104,12 @@ public class CreateRouteController extends Controller{
 
     @FXML
     private void createAction(){
+        StopPoint university = new StopPoint(20, "Kirkwood Ave", "Upper Riccarton");
+        if (toUni.selectedProperty().getValue()){
+            routeList.add(university);
+        } else {
+            routeList.add(0, university);
+        }
         Route route = new Route(routeList);
         dataStore.addRoute(route);
 
