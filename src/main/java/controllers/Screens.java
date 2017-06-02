@@ -8,7 +8,8 @@ public enum Screens {
     DRIVER ("/Driver.fxml"),
     REGISTER_CAR ("/RegisterCar.fxml"),
     CREATE_STOP_POINT ("/CreateStopPoint.fxml"),
-    CREATE_ROUTE ("/CreateRoute.fxml");
+    CREATE_ROUTE ("/CreateRoute.fxml"),
+    CREATE_TRIP ("/CreateTrip.fxml");
 
     private final String value;
 

@@ -22,6 +22,7 @@ public class CreateRouteController extends Controller{
 
     @FXML private Text errorText;
     @FXML private TextField searchField;
+    @FXML private TextField nameField;
 
     @FXML private TableView<StopPoint> stopPointTable, routeTable;
 
@@ -110,7 +111,7 @@ public class CreateRouteController extends Controller{
         } else {
             routeList.add(0, university);
         }
-        Route route = new Route(routeList);
+        Route route = new Route(routeList, nameField.getText());
         dataStore.addRoute(route);
 
         screenController.loadScreen(Screens.DRIVER.getValue());

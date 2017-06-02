@@ -34,4 +34,9 @@ public class DriverMainController extends Controller{
     private void createRouteAction(){
         screenController.loadScreen(Screens.CREATE_ROUTE.getValue());
     }
+
+    @FXML
+    private void createTripAction(){
+        screenController.loadScreen(Screens.CREATE_TRIP.getValue());
+    }
 }

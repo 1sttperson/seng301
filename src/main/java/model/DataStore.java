@@ -2,14 +2,12 @@ package model;
 
 import java.util.*;
 
-/**
- * Created by ptg19 on 4/04/17.
- */
 public class DataStore {
     private Map<Integer, Driver> drivers;
     private Map<Integer, Passenger> passengers;
     private Driver currentDriver;
     private List<StopPoint> stopPoints;
+
     private List<Route> routes;
 
     private static DataStore instance = null;
@@ -36,6 +34,7 @@ public class DataStore {
         drivers.put(driver.getId(), driver);
         App.save(instance);
     }
+
     public void addPassenger(Passenger passenger){
         passengers.put(passenger.getId(), passenger);
         App.save(instance);
@@ -48,7 +47,6 @@ public class DataStore {
 //            System.out.println(point.getNumber());
 //        }
     }
-
     public void addRoute(Route route){
         routes.add(route);
         App.save(instance);
@@ -56,6 +54,10 @@ public class DataStore {
 
     public void setCurrentDriver(Driver currentDriver) {
         this.currentDriver = currentDriver;
+    }
+
+    public List<Route> getRoutes() {
+        return routes;
     }
     public Driver getCurrentDriver() {
         return currentDriver;

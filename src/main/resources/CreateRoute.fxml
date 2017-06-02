@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
-<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
@@ -84,12 +83,18 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <children>
-                  <RadioButton fx:id="toUni" mnemonicParsing="false" prefHeight="18.0" prefWidth="166.0" selected="true" text="To Uni">
+                  <RadioButton fx:id="toUni" mnemonicParsing="false" prefHeight="18.0" prefWidth="75.0" selected="true" text="To Uni">
                      <toggleGroup>
                         <ToggleGroup fx:id="Direction" />
                      </toggleGroup>
                   </RadioButton>
-                  <RadioButton fx:id="fromUni" mnemonicParsing="false" text="From Uni" toggleGroup="$Direction" />
+                  <RadioButton fx:id="fromUni" mnemonicParsing="false" prefHeight="18.0" prefWidth="93.0" text="From Uni" toggleGroup="$Direction" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="nameField" prefHeight="25.0" prefWidth="160.0" />
                </children>
                <GridPane.margin>
                   <Insets />
@@ -100,8 +105,8 @@
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="845.0" minWidth="10.0" prefWidth="173.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="845.0" minWidth="0.0" prefWidth="379.0" />
             <ColumnConstraints hgrow="SOMETIMES" maxWidth="845.0" minWidth="0.0" prefWidth="173.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="845.0" minWidth="10.0" prefWidth="372.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="783.0" minWidth="10.0" prefWidth="183.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="845.0" minWidth="10.0" prefWidth="387.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="783.0" minWidth="10.0" prefWidth="168.0" />
          </columnConstraints>
          <rowConstraints>
             <RowConstraints maxHeight="373.0" minHeight="10.0" prefHeight="144.0" vgrow="SOMETIMES" />
