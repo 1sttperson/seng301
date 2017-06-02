@@ -19,11 +19,6 @@
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="80.0" prefWidth="260.0" text="Passenger" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
-               <font>
-                  <Font size="25.0" />
-               </font>
-            </Button>
             <Label text="Login" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                <font>
                   <Font size="22.0" />
@@ -38,7 +33,7 @@
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <TextField HBox.hgrow="ALWAYS" />
+                        <TextField fx:id="idField" HBox.hgrow="ALWAYS" />
                      </children>
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
@@ -48,7 +43,7 @@
                               <Font size="14.0" />
                            </font>
                         </Text>
-                        <TextField HBox.hgrow="ALWAYS" />
+                        <PasswordField fx:id="passwordField" prefHeight="25.0" prefWidth="543.0" />
                      </children>
                   </HBox>
                </children>
@@ -59,6 +54,11 @@
                </font>
             </Label>
             <Button mnemonicParsing="false" onAction="#registerAction" prefHeight="80.0" prefWidth="260.0" text="Register" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#loginAction" prefHeight="80.0" prefWidth="260.0" text="Login" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                <font>
                   <Font size="25.0" />
                </font>

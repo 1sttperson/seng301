@@ -1,58 +1,31 @@
 {
-  "drivers": {},
-  "passengers": {},
-  "stopPoints": [
-    {
-      "number": 1,
-      "street": "1",
-      "suburb": "1"
-    },
-    {
-      "number": 2,
-      "street": "2",
-      "suburb": "2"
-    },
-    {
-      "number": 87,
-      "street": "1",
-      "suburb": "2"
+  "drivers": {
+    "123": {
+      "licenceType": "Restricted",
+      "licenceNumber": "",
+      "registeredCars": {},
+      "type": "DRIVER",
+      "id": 123,
+      "password": "123",
+      "email": "",
+      "name": "",
+      "address": "",
+      "homeNumber": "",
+      "mobileNumber": ""
     }
-  ],
-  "routes": [
-    {
-      "stopPoints": [
-        {
-          "number": 1,
-          "street": "1",
-          "suburb": "1"
-        },
-        {
-          "number": 20,
-          "street": "Kirkwood Ave",
-          "suburb": "Upper Riccarton"
-        }
-      ],
-      "name": "asdf"
-    },
-    {
-      "stopPoints": [
-        {
-          "number": 87,
-          "street": "1",
-          "suburb": "2"
-        },
-        {
-          "number": 2,
-          "street": "2",
-          "suburb": "2"
-        },
-        {
-          "number": 20,
-          "street": "Kirkwood Ave",
-          "suburb": "Upper Riccarton"
-        }
-      ],
-      "name": "asdf"
+  },
+  "passengers": {
+    "321": {
+      "type": "PASSENGER",
+      "id": 321,
+      "password": "321",
+      "email": "",
+      "name": "",
+      "address": "",
+      "homeNumber": "",
+      "mobileNumber": ""
     }
-  ]
+  },
+  "stopPoints": [],
+  "routes": []
 }

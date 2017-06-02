@@ -31,4 +31,8 @@ public abstract class Account {
     public int getId() {
         return id;
     }
+
+    public String getPassword() {
+        return password;
+    }
 }

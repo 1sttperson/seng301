@@ -6,6 +6,7 @@ public enum Screens {
     REGISTER_DRIVER("/RegisterDriver.fxml"),
     REGISTER_PASSENGER("/RegisterPassenger.fxml"),
     DRIVER ("/Driver.fxml"),
+    PASSENGER ("/Passenger.fxml"),
     REGISTER_CAR ("/RegisterCar.fxml"),
     CREATE_STOP_POINT ("/CreateStopPoint.fxml"),
     CREATE_ROUTE ("/CreateRoute.fxml"),
