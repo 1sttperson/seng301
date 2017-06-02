@@ -3,7 +3,16 @@
     "123": {
       "licenceType": "Restricted",
       "licenceNumber": "",
-      "registeredCars": {},
+      "registeredCars": {
+        "123432": {
+          "type": "123",
+          "model": "123",
+          "colour": "1231",
+          "plateNumber": "123432",
+          "yearMade": 1,
+          "numSeats": 1
+        }
+      },
       "type": "DRIVER",
       "id": 123,
       "password": "123",
@@ -25,6 +34,28 @@
       "homeNumber": "",
       "mobileNumber": ""
     }
+  },
+  "currentDriver": {
+    "licenceType": "Restricted",
+    "licenceNumber": "",
+    "registeredCars": {
+      "123432": {
+        "type": "123",
+        "model": "123",
+        "colour": "1231",
+        "plateNumber": "123432",
+        "yearMade": 1,
+        "numSeats": 1
+      }
+    },
+    "type": "DRIVER",
+    "id": 123,
+    "password": "123",
+    "email": "",
+    "name": "",
+    "address": "",
+    "homeNumber": "",
+    "mobileNumber": ""
   },
   "stopPoints": [],
   "routes": []

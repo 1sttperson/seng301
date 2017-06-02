@@ -15,10 +15,9 @@ to be updated.
 public interface. This means that the Screen controller can now have a generic
 loadScreen function.
 
-## Story assumtions
-### Story 4
-I am assuming 
 
-
-
-Decided in driver not to over engineer by creating a licence class
+The main things I would change if I was trying to make this product reliable is I would
+use a better method for checking form input rather than the ugly try/catch blocks I have
+currently.
+At this point the functionality for creating a trip is there but the create button is not
+attached to anything so the trips can't actually be stored yet.

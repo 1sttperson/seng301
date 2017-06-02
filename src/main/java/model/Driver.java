@@ -28,5 +28,6 @@ public class Driver extends Account{
 
     public void registerCar(Car car){
         registeredCars.put(car.getPlateNumber(), car);
+        App.save(DataStore.getInstance());
     }
 }

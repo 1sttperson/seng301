@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import model.DataStore;
+import model.Driver;
 
 public class LoginController extends Controller{
 
@@ -31,7 +32,9 @@ public class LoginController extends Controller{
             DataStore dataStore = DataStore.getInstance();
             Integer studentId = Integer.parseInt(idField.getText());
             if (dataStore.getDrivers().containsKey(studentId)) {
-                if (dataStore.getDrivers().get(studentId).getPassword().equals(passwordField.getText())) {
+                Driver driver = dataStore.getDrivers().get(studentId);
+                if (driver.getPassword().equals(passwordField.getText())) {
+                    dataStore.setCurrentDriver(driver);
                     screenController.loadScreen(Screens.DRIVER.getValue());
                 }
             }

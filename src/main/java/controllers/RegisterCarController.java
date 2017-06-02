@@ -52,9 +52,8 @@ public class RegisterCarController extends Controller {
 
             Car car = new Car(type, model, colour, plateNumber, modelYear, numSeats);
             Driver driver = dataStore.getCurrentDriver();
-            driver.registerCar(car);
+            dataStore.getCurrentDriver().registerCar(car);
 
-            System.out.println(car.getPlateNumber());
             screenController.loadScreen(Screens.DRIVER.getValue());
         } catch (Exception e){
             errorText.setText("Error. Some fields are not in the correct format");
